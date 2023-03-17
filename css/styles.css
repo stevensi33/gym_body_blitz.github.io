@@ -1,6 +1,27 @@
 /* cuando sea vista celular el bloque de las tarjetas poner display block, poner un ID al bloque o una clase para romper */
+@import url('https://fonts.cdnfonts.com/css/gotham');
 
+*{
+    font-family: gotham;
+}
 #menuBurger{
     color: #ffb415;
 }
 
+.span1{
+    color: #ffb415; 
+}
+
+
+#custom-video {
+    height: 315px;
+    width: 560px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #custom-video {
+      width: auto;  
+      height: auto;
+    }
+  }
+  
