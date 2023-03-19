@@ -25,3 +25,10 @@
     }
   }
   
+   .fab  {
+    color: gray;
+  }
+
+  .fab:hover{
+    color: #ffb415;
+  }
