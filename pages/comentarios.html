@@ -54,7 +54,63 @@
           </div>
         </div>
       </nav>
-
+    
+    <!-- Tarjetas comentarios -->
+    <div class="titulo">
+      <h2>Comentarios de nuestros <span class="span1">afiliados</span></h2>
+    </div>
+    <div class="contenedorComentarios">
+      <div class="tarjetaComentarios">
+        <img src="../img/persona1.png" alt="clase_1">
+        <div>
+          <p>Desde que llegué a B-BLITZ me hicieron sentir como una más en esa gran familia que han creado en sus instalaciones, siempre pendientes de estar a la última en las actividades, pero sin duda lo mejor de este gimnasio es el equipo humano que lo forma estando pendientes de todos y cada uno de aquellos que visiten sus instalaciones.
+          </p>
+        </div>
+      </div>
+      <div class="tarjetaComentarios">
+        <img src="../img/persona2.png" alt="clase_2">
+        <div>
+          <p>
+            Llevo dos años entrenando en el gimnasio B-BLITZ durante mis vacaciones y estoy encantado. Tienen todo lo que necesitas para entrenar y un montón de clases colectivas. Y lo mejor de todo es el trato y el buen asesoramiento que te dan desde el minuto 1. Se nota la experiencia de muchos años.Sin duda el mejor gimnasio.
+          </p>
+        </div>
+      </div>
+      <div class="tarjetaComentarios">
+        <img src="../img/persona3.jpg" alt="clase_2">
+        <div>
+          <p>
+            Instalaciones de calidad y alta profesionalidad. Es todo un lujo poder contar con la direccion y el consejo de dos profesionales como los que regentan este gym por un precio al alcance de cualquier bolsillo. lo mejor de este gimnasio es el equipo humano que siempre esta al pendiente de tus nececidades, enamorada de B-BLITZ.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Formulario comentarios -->
+    <div class="titulo">
+      <h5>Envíanos algún <span class="span1">comentario</span></h5>
+    </div>
+    <form class="formComentarios">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="celular">Celular:</label>
+      <input type="number" id="celular" name="celular" required>
+      <label for="resena">Reseña:</label>
+      <textarea id="resena" name="resena" required></textarea>
+      <label>¿Nos recomendarías a tus amigos?</label>
+      <div class="radio-group">
+        <label for="si">Sí</label>
+        <input type="radio" id="si" name="recomendacion" value="si" required>
+        <label for="no">No</label>
+        <input type="radio" id="no" name="recomendacion" value="no" required>
+      </div>
+      <label for="razon">¿Por qué?</label>
+      <textarea id="razon" name="razon"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
 
     <!-- footer -->
     <div class="container-fluid bg-dark text-light">
