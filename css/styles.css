@@ -139,14 +139,79 @@ textarea {
   height: 100px;
 }
 
-.formComentarios input[type="submit"] {
+.formComentarios .btnComentarios[type="submit"] {
   background-color: #ffb415;
   color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
+
+/* contacto formulario */
+
+/* Estilos base para pantallas mayores a 767px */
+
+.contacto {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px  ;
+}
+
+.contacto input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+  .ContenedorBtnContacto{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnContacto[type="submit"] {
+  display: block;  
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffb415;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnContacto[type="submit"]:hover {
+  background-color: #363836;
+}
+
+/* Media query para pantallas menores a 767px */
+
+@media (max-width: 767px) {
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+
 
 /* contenedor tarjetas Media query para pantallas menores a 767px */
 @media screen and (max-width: 767px) {
