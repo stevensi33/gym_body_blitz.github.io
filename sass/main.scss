@@ -1,0 +1,217 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+@import 'vars';
+
+
+*{
+    font-family: gotham;
+}
+
+/* Color menú hamburguesa */
+nav{
+    button{
+        span{
+            color: $mainColor;
+        }   
+    }
+}
+
+/* Span ppial */
+.span1{
+    color: $mainColor;
+}
+
+/* Video instalaciones */
+section{
+    #custom-video{
+        height: 315px;
+        width: 560px;
+    }
+}
+
+/* redes */
+.fab{
+    color: gray;
+    &:hover{
+        color: $mainColor;
+    }
+}
+
+/*contenedor tarjetas */
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    gap: 20px;
+     .tarjeta{
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: white;
+            }
+        }
+        button{
+            margin-top: auto;
+            padding: 10px;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 5px;
+        }
+
+    }
+}
+
+/* comentarios */
+
+.titulo{
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.contenedorComentarios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    gap: 20px;
+    .tarjetaComentarios{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        & img{
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
+/* comentarios  formulario */
+
+.formComentarios {
+    max-width: 400px;
+    margin: 0 auto;
+    & label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    & input, textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    & .radio-group{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    & input[type="radio"]{
+        margin-right: 5px;
+    }
+    & textarea{
+        height: 100px;
+    }
+    & .btnComentarios[type="submit"]{
+        background-color: $mainColor;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    & .btnComentarios:hover{
+        background-color: #363836;
+        color: white;
+    }
+  }
+
+
+/* contacto formulario */
+
+
+.contacto{
+    max-width: 600px;
+    margin: 0 auto;
+    & label, input, textarea{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px  ;
+    }
+    & input[type="text"], input[type="email"], textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    & .ContenedorBtnContacto{
+        display: flex;
+        justify-content: center;
+
+        & .btnContacto{
+            display: block;  
+            width: 40%;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: $mainColor;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        & .btnContacto:hover{
+            background-color: #363836;
+        }
+    }
+}
+
+
+
+
+/* media Video instalaciones */
+@media (max-width: 767px){
+    section{
+        #custom-video{
+            height: auto;
+            width: auto;
+        }
+    }
+}
+
+
+/* contenedor tarjetas Media query para pantallas menores a 767px */
+@media (max-width: 767px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+    }
+  }
+
+/* comentarios Media query para pantallas menores a 767px */
+@media screen and (max-width: 767px) {
+    .contenedorComentarios {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Formulario comentarios Media query para pantallas menores a 767px */
+  @media (max-width: 767px) {
+    form {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
