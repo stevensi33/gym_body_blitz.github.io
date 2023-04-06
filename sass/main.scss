@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
 @import 'vars';
-
+@import 'contacto';
+@import 'comentarios';
 
 *{
     font-family: gotham;
@@ -97,91 +98,6 @@ section{
     }
 }
 
-/* comentarios  formulario */
-
-.formComentarios {
-    max-width: 400px;
-    margin: 0 auto;
-    & label{
-        display: block;
-        margin-bottom: 5px;
-    }
-    & input, textarea{
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    & .radio-group{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-    & input[type="radio"]{
-        margin-right: 5px;
-    }
-    & textarea{
-        height: 100px;
-    }
-    & .btnComentarios[type="submit"]{
-        background-color: $mainColor;
-        color: black;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-    }
-    & .btnComentarios:hover{
-        background-color: #363836;
-        color: white;
-    }
-  }
-
-
-/* contacto formulario */
-
-
-.contacto{
-    max-width: 600px;
-    margin: 0 auto;
-    & label, input, textarea{
-        display: block;
-        margin-bottom: 10px;
-        margin-top: 10px  ;
-    }
-    & input[type="text"], input[type="email"], textarea{
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    & .ContenedorBtnContacto{
-        display: flex;
-        justify-content: center;
-
-        & .btnContacto{
-            display: block;  
-            width: 40%;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: $mainColor;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        & .btnContacto:hover{
-            background-color: #363836;
-        }
-    }
-}
-
-
-
-
 /* media Video instalaciones */
 @media (max-width: 767px){
     section{
@@ -191,7 +107,6 @@ section{
         }
     }
 }
-
 
 /* contenedor tarjetas Media query para pantallas menores a 767px */
 @media (max-width: 767px) {

@@ -1,0 +1,41 @@
+/* comentarios  formulario */
+
+.formComentarios {
+    max-width: 400px;
+    margin: 0 auto;
+    & label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    & input, textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    & .radio-group{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    & input[type="radio"]{
+        margin-right: 5px;
+    }
+    & textarea{
+        height: 100px;
+    }
+    & .btnComentarios[type="submit"]{
+        background-color: $mainColor;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    & .btnComentarios:hover{
+        background-color: #363836;
+        color: white;
+    }
+  }
