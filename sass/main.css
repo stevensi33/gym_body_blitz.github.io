@@ -90,12 +90,13 @@ nav button span {
   color: #ffb415;
 }
 
-/* Video instalaciones */
-section #custom-video {
-  height: 315px;
-  width: 560px;
-}
-
+/* Video instalaciones 
+section{
+    #custom-video{
+        height: 315px;
+        width: 60%;
+    }
+}*/
 /* redes */
 .fab {
   color: gray;

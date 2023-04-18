@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand me-5" href="#">
-            <img src="../img/logo.png" alt="logo" width="100" height="44">
+            <img src="../img/logo.png" alt="logo bodyblitz" width="100" height="44">
           </a>
           <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span id="menuBurger"><i class="fa-solid fa-bars"></i></span>
@@ -64,14 +64,14 @@
     </div>
     <div class="contenedorComentarios">
       <div class="tarjetaComentarios">
-        <img src="../img/persona1.png" alt="clase_1">
+        <img src="../img/persona1.png" alt="usuario bodyblitz">
         <div>
           <p>Desde que llegué a B-BLITZ me hicieron sentir como uno más en esa gran familia que han creado en sus instalaciones, siempre pendientes de estar a la última en las actividades, pero sin duda lo mejor de este gimnasio es el equipo humano que lo forma estando pendientes de todos y cada uno de aquellos que visiten sus instalaciones.
           </p>
         </div>
       </div>
       <div class="tarjetaComentarios">
-        <img src="../img/persona2.png" alt="clase_2">
+        <img src="../img/persona2.png" alt="usuario bodyblitz">
         <div>
           <p>
             Llevo dos años entrenando en el gimnasio B-BLITZ durante mis vacaciones y estoy encantado. Tienen todo lo que necesitas para entrenar y un montón de clases colectivas. Y lo mejor de todo es el trato y el buen asesoramiento que te dan desde el minuto 1. Se nota la experiencia de muchos años.Sin duda el mejor gimnasio.
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="tarjetaComentarios">
-        <img src="../img/persona3.jpg" alt="clase_2">
+        <img src="../img/persona3.jpg" alt="usuario bodyblitz">
         <div>
           <p>
             Instalaciones de calidad y alta profesionalidad. Es todo un lujo poder contar con la direccion y el consejo de dos profesionales como los que regentan este gym por un precio al alcance de cualquier bolsillo. lo mejor de este gimnasio es el equipo humano que siempre esta al pendiente de tus nececidades, enamorada de B-BLITZ.
@@ -119,6 +119,7 @@
     <div class="container-fluid bg-dark text-light">
       <footer>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+          
           <div class="col mb-3">
             <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
@@ -153,13 +154,19 @@
           </div>
         </div>
 
-        <!-- redes -->
-
-        <div class="container text-end">
-          <h5 class="mb-4 fw-bold fs-6">Siguenos</h5>
+        <div class="container-fluid m-lg-0 m-md-0 m-sm-0">
           <div class="row">
-            <div class="col-md-12 ">
-              <ul class="list-inline social-buttons">
+            <!-- ubicación -->
+            <div class="col-md-6">
+              <h5 class="mb-4 fw-bold fs-6">Visitanos</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" data-bs-toggle="modal" data-bs-target="#ModalUbicacion" class="fab"><i class="fa-solid fa-street-view fa-2x"></i></a></li>
+              </ul>
+            </div>
+            <!-- redes -->
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+              <h5 class="mb-4 fw-bold fs-6">Siguenos</h5>
+              <ul class="list-inline social-buttons justify-content-md-end">
                 <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
                 <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -167,13 +174,30 @@
             </div>
           </div>
         </div>
-      
+        
+        <!-- Modal -->
+        <div class="modal fade" id="ModalUbicacion" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-black" id="ModalLabel">Nuestros gimnasios &#128155 Cerca de ti</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d253849.1755196569!2d-75.90460381364001!3d6.211738249466779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbodytech!5e0!3m2!1ses!2sco!4v1681786348409!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </footer>
     </div>
     
 
 
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <!-- Scriot de fontawesome para el icono hamburguesa -->
     <script src="https://kit.fontawesome.com/f80aaced92.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
